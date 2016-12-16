@@ -6,13 +6,18 @@
 
 int main()
 {
-	int tasksNum = 40;
-	int resourcesNum = 10;
+	int tasksNum = 80;
+	int resourcesNum = 20;
 	int percent = 80;
-	int procRate = 5;
-	int difficulty = 5;
+	int procRate = 20;
+	int difficulty = 20;
 
-	/*
+	
+	printf("Number of tasks ....................... %d\n", tasksNum);
+	printf("Number of resources ................... %d\n", resourcesNum);
+	printf("Upper bound of task difficulty ........ %d\n", difficulty);
+	printf("Upper bound of resource performance ... %d\n", procRate);
+	printf("Percentage of busy cells in matrix .... %d\n\n", percent);
 
 	// Check algorythm once
 	int** matrix = MakeMatrix(tasksNum, resourcesNum);
@@ -28,11 +33,12 @@ int main()
 	int** planArray = PlanTasks(matrix, tasksVector, resourcesVector, tasksNum, resourcesNum);
 	
 	double avarageWaitTime = AvarageWaitTime(planArray, resourcesNum);
-	printf("%.2f\n", avarageWaitTime);
-	*/
+	printf("Average wait time ....................... %.2f\n", avarageWaitTime);
+	
 
+	/*
 	// Calculate average numbers
-	for (int i = 1; i < 100; i++)
+	for (int i = 1; i < 100; i+=5)
 	{
 		double sumTime = 0;
 
@@ -53,7 +59,7 @@ int main()
 		
 		printf("%.2f\n", sumTime/10);
 	}
-
+	*/
 
 	scanf("");
     return 0;

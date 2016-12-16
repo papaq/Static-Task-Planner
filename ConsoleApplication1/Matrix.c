@@ -63,7 +63,8 @@ void FillRandVector(int * vector, int m, int upper)
 	for (int i = 0; i < m; i++)
 	{
 		int random = rand() % upper;
-		vector[i] = random + 1;
+		//vector[i] = random + 1;
+		vector[i] = upper;
 	}
 }
 
